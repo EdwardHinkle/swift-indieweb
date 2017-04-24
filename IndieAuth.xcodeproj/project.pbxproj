@@ -10,6 +10,7 @@
 		33F007E81EAD84FD0054E747 /* IndieAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F007DE1EAD84FD0054E747 /* IndieAuth.framework */; };
 		33F007ED1EAD84FD0054E747 /* IndieAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F007EC1EAD84FD0054E747 /* IndieAuthTests.swift */; };
 		33F007EF1EAD84FD0054E747 /* IndieAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F007E11EAD84FD0054E747 /* IndieAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33F008021EAD85950054E747 /* IndieAuthLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F008011EAD85950054E747 /* IndieAuthLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		33F007E71EAD84FD0054E747 /* IndieAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndieAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F007EC1EAD84FD0054E747 /* IndieAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndieAuthTests.swift; sourceTree = "<group>"; };
 		33F007EE1EAD84FD0054E747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F008011EAD85950054E747 /* IndieAuthLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndieAuthLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				33F007E11EAD84FD0054E747 /* IndieAuth.h */,
 				33F007E21EAD84FD0054E747 /* Info.plist */,
+				33F008011EAD85950054E747 /* IndieAuthLoginViewController.swift */,
 			);
 			path = IndieAuth;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F008021EAD85950054E747 /* IndieAuthLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +336,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = IndieAuth/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = software.studioh.IndieAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,6 +356,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = IndieAuth/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = software.studioh.IndieAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +368,7 @@
 		33F007F61EAD84FD0054E747 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 26VU3UTL8J;
 				INFOPLIST_FILE = IndieAuthTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +381,7 @@
 		33F007F71EAD84FD0054E747 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 26VU3UTL8J;
 				INFOPLIST_FILE = IndieAuthTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
