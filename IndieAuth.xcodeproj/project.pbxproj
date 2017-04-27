@@ -410,6 +410,7 @@
 				33F007F41EAD84FD0054E747 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33F007F51EAD84FD0054E747 /* Build configuration list for PBXNativeTarget "IndieAuthTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +419,7 @@
 				33F007F71EAD84FD0054E747 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

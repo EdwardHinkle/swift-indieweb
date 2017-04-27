@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 
-class IndieAuthLoginViewController: UIViewController,UITextFieldDelegate {
+public class IndieAuthLoginViewController: UIViewController,UITextFieldDelegate {
     
     enum IndieWebEndpointType: String {
         case Authorization = "authorization_endpoint"
@@ -150,18 +150,18 @@ class IndieAuthLoginViewController: UIViewController,UITextFieldDelegate {
     
     
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         loginWithIndieAuth(nil)
         return true
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         indieAuthDomain?.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
+    public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
